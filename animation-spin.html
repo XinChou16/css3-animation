@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>事件玄停</title>
+  <style>
+    .wrap {
+      width:200px;
+      margin:auto;
+      z-index:1;
+    }
+    .msg {
+      color: whitesmoke;
+      text-align:center;
+      font-family: 'Bree Serif', Courier, monospaced;
+      font-size:2.5em;
+      width:200px;
+      position:absolute;
+      margin:60px 0px 0 10px;
+      pointer-events: none;
+    }
+    .sticker {
+      width:200px;
+      height:200px;
+      position:absolute;
+      background: url(http://www.w3cplus.com/sites/default/files/blogs/2015/1506/sticker.png) top center no-repeat;
+      -webkit-animation: spin 10s linear infinite;
+      -webkit-animation-play-state: paused; /*设置动画正常 为停止*/
+    }
+    .sticker:hover {
+      -webkit-animation-play-state: running;/*当鼠标放到其上的时候 触发动画*/
+    }
+    @-webkit-keyframes spin {
+      100% {transform: rotate(1turn); }
+    }
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <div class="sticker"></div>
+  <div class="msg">Cover me!</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>移动小汽车</title>
+    <style>
+    .car {
+        -webkit-animation-name: drive;
+        -webkit-animation-duration: 4s;
+        -webkit-animation-timing-function: ease-in;
+        -webkit-animation-iteration-count: infinite;
+    }
+
+    @-webkit-keyframes drive {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(500px);
+        }
+    }
+    .wrap{
+      margin: 200px auto;
+    }
+    </style>
+</head>
+
+<body>
+<div class="wrap">
+    <img src="http://www.w3cplus.com/sites/default/files/blogs/2015/1506/car.png" class="car" style:width="220" />
+</div>
+</body>
+
+</html>
